@@ -7,55 +7,55 @@
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
-S_0x59fd60a1cb40 .scope module, "sr_latch_tb" "sr_latch_tb" 2 1;
+S_0x5d2533b56b40 .scope module, "sr_latch_tb" "sr_latch_tb" 2 1;
  .timescale 0 0;
-v0x59fd60a309e0_0 .net "q", 0 0, L_0x59fd60a30e50;  1 drivers
-v0x59fd60a30aa0_0 .net "qbar", 0 0, L_0x59fd60a31020;  1 drivers
-v0x59fd60a30b40_0 .var "r", 0 0;
-v0x59fd60a30c40_0 .var "s", 0 0;
-S_0x59fd60a1ccd0 .scope module, "uut" "sr_latch" 2 6, 3 1 0, S_0x59fd60a1cb40;
+v0x5d2533b6a9e0_0 .net "q", 0 0, L_0x5d2533b6ae50;  1 drivers
+v0x5d2533b6aaa0_0 .net "qbar", 0 0, L_0x5d2533b6b020;  1 drivers
+v0x5d2533b6ab40_0 .var "r", 0 0;
+v0x5d2533b6ac40_0 .var "s", 0 0;
+S_0x5d2533b56cd0 .scope module, "uut" "sr_latch" 2 6, 3 1 0, S_0x5d2533b56b40;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "s";
     .port_info 1 /INPUT 1 "r";
     .port_info 2 /OUTPUT 1 "q";
     .port_info 3 /OUTPUT 1 "qbar";
-L_0x59fd60a30d10 .functor OR 1, v0x59fd60a30b40_0, L_0x59fd60a31020, C4<0>, C4<0>;
-L_0x59fd60a30e50 .functor NOT 1, L_0x59fd60a30d10, C4<0>, C4<0>, C4<0>;
-L_0x59fd60a30f60 .functor OR 1, v0x59fd60a30c40_0, L_0x59fd60a30e50, C4<0>, C4<0>;
-L_0x59fd60a31020 .functor NOT 1, L_0x59fd60a30f60, C4<0>, C4<0>, C4<0>;
-v0x59fd60a0c690_0 .net *"_ivl_0", 0 0, L_0x59fd60a30d10;  1 drivers
-v0x59fd60a30550_0 .net *"_ivl_4", 0 0, L_0x59fd60a30f60;  1 drivers
-v0x59fd60a30630_0 .net "q", 0 0, L_0x59fd60a30e50;  alias, 1 drivers
-v0x59fd60a306d0_0 .net "qbar", 0 0, L_0x59fd60a31020;  alias, 1 drivers
-v0x59fd60a30790_0 .net "r", 0 0, v0x59fd60a30b40_0;  1 drivers
-v0x59fd60a308a0_0 .net "s", 0 0, v0x59fd60a30c40_0;  1 drivers
-    .scope S_0x59fd60a1cb40;
+L_0x5d2533b6ad10 .functor AND 1, v0x5d2533b6ac40_0, L_0x5d2533b6b020, C4<1>, C4<1>;
+L_0x5d2533b6ae50 .functor NOT 1, L_0x5d2533b6ad10, C4<0>, C4<0>, C4<0>;
+L_0x5d2533b6af60 .functor AND 1, v0x5d2533b6ab40_0, L_0x5d2533b6ae50, C4<1>, C4<1>;
+L_0x5d2533b6b020 .functor NOT 1, L_0x5d2533b6af60, C4<0>, C4<0>, C4<0>;
+v0x5d2533b46690_0 .net *"_ivl_0", 0 0, L_0x5d2533b6ad10;  1 drivers
+v0x5d2533b6a550_0 .net *"_ivl_4", 0 0, L_0x5d2533b6af60;  1 drivers
+v0x5d2533b6a630_0 .net "q", 0 0, L_0x5d2533b6ae50;  alias, 1 drivers
+v0x5d2533b6a6d0_0 .net "qbar", 0 0, L_0x5d2533b6b020;  alias, 1 drivers
+v0x5d2533b6a790_0 .net "r", 0 0, v0x5d2533b6ab40_0;  1 drivers
+v0x5d2533b6a8a0_0 .net "s", 0 0, v0x5d2533b6ac40_0;  1 drivers
+    .scope S_0x5d2533b56b40;
 T_0 ;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x59fd60a30c40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ac40_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x59fd60a30b40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ab40_0, 0, 1;
     %delay 10, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x59fd60a30c40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ac40_0, 0, 1;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x59fd60a30b40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ab40_0, 0, 1;
     %delay 10, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x59fd60a30c40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ac40_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x59fd60a30b40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ab40_0, 0, 1;
     %delay 10, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x59fd60a30c40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ac40_0, 0, 1;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x59fd60a30b40_0, 0, 1;
+    %store/vec4 v0x5d2533b6ab40_0, 0, 1;
     %delay 10, 0;
     %end;
     .thread T_0;
-    .scope S_0x59fd60a1cb40;
+    .scope S_0x5d2533b56b40;
 T_1 ;
-    %vpi_call 2 16 "$monitor", "time=%0t|s=%b|r=%b|q=%b|qbar=%b", $time, v0x59fd60a30c40_0, v0x59fd60a30b40_0, v0x59fd60a309e0_0, v0x59fd60a30aa0_0 {0 0 0};
+    %vpi_call 2 16 "$monitor", "time=%0t|s=%b|r=%b|q=%b|qbar=%b", $time, v0x5d2533b6ac40_0, v0x5d2533b6ab40_0, v0x5d2533b6a9e0_0, v0x5d2533b6aaa0_0 {0 0 0};
     %delay 40, 0;
     %vpi_call 2 18 "$finish" {0 0 0};
     %end;
@@ -64,5 +64,5 @@ T_1 ;
 :file_names 4;
     "N/A";
     "<interactive>";
-    "sr_latch_tb.v";
-    "sr_latch.v";
+    "sr_latch_nand_tb.v";
+    "sr_latch_nand.v";
