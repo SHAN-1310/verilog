@@ -28,7 +28,7 @@ load=1;#10;
 din=4'b1001;#10;
 
 load=0;#10;
-sin=0;#10;
+sin=1;#10;
 end
 initial begin
 $monitor("time=%0t|clk=%b|reset=%b|load=%b|din=%b|sin=%b|sout=%b",$time,clk,reset,load,din,sin,sout);
