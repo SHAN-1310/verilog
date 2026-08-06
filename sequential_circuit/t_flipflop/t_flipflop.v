@@ -1,7 +1,7 @@
 module t_flipflop(
 input clk,rst,t,
 output reg q);
-always@(posedge clk or posedge rst)
+always@(posedge clk)
 begin 
 if(rst)
 q<=1'b0;
