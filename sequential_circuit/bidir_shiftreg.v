@@ -1,0 +1,32 @@
+module bidir_shiftreg(
+input clk,reset,m,sin,
+output [3:0]sout
+);
+reg q0,q1,q2,q3;
+always@(posedge clk or posedge reset) begin
+if(reset) begin
+q0<=1'b0;
+q1<=1'b0;
+q2<=1'b0;
+q3<=1'b0;
+end
+else begin
+	if(m==1) begin
+q3<=sin;
+q2<=q3;
+q1<=q2;
+q0<=q1;
+end
+else begin
+q0<=sin;
+q1<=q0;
+q2<=q1;
+q3<=q2;
+end
+end
+end
+assign sout={q3,q2,q1,q0};
+endmodule
+
+
+
