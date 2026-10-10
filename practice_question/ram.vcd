@@ -1,0 +1,100 @@
+$date
+	Sat Oct 10 16:20:34 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ram_16to16_tb $end
+$var wire 16 ! dout [15:0] $end
+$var reg 4 " addr [3:0] $end
+$var reg 1 # clk $end
+$var reg 16 $ din [15:0] $end
+$var reg 1 % rd_en $end
+$var reg 1 & rst $end
+$var reg 1 ' wr_en $end
+$scope module RAM $end
+$var wire 4 ( addr [3:0] $end
+$var wire 1 # clk $end
+$var wire 16 ) din [15:0] $end
+$var wire 1 % rd_en $end
+$var wire 1 & rst $end
+$var wire 1 ' wr_en $end
+$var reg 16 * dout [15:0] $end
+$var integer 32 + i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx +
+bx *
+b0 )
+bx (
+0'
+1&
+0%
+b0 $
+0#
+bx "
+bx !
+$end
+#5
+b0 !
+b0 *
+b10000 +
+1#
+#10
+0#
+0&
+#15
+1#
+#20
+0#
+b100101000 $
+b100101000 )
+b1100 "
+b1100 (
+1'
+#25
+1#
+#30
+0#
+0'
+#35
+1#
+#40
+0#
+1%
+#45
+b100101000 !
+b100101000 *
+1#
+#50
+0#
+0%
+#55
+1#
+#60
+0#
+#65
+1#
+#70
+0#
+#75
+1#
+#80
+0#
+#85
+1#
+#90
+0#
+#95
+1#
+#100
+0#
