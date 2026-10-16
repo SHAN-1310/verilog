@@ -25,6 +25,10 @@ jk_ff JK(
 	        $finish;
        end
        initial begin
+	       $dumpfile("jk.vcd");
+	       $dumpvars(0,jk_ff_tb);
+       end
+       initial begin
 	       $monitor("time=%0t clk=%b rst=%b j=%b k=%b q=%b",
 		       $time,clk,rst,j,k,q);
        end

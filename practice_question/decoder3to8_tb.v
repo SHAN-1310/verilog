@@ -15,6 +15,10 @@ initial begin
         {a,b,c}=3'b111;#10;
 end
 initial begin
+	$dumpfile("decoder.vcd");
+	$dumpvars(0,decoder3to8_tb);
+end
+initial begin
 	$monitor("time=%0t a=%b b=%b c=%b y0=%b y1=%b y2=%b y3=%b y4=%b y5=%b y6=%b y7=%b",
 	$time,a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
 #80 $finish;

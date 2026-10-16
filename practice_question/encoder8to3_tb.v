@@ -16,6 +16,10 @@ initial begin
 	{a,b,c,d,e,f,g,h}=8'b10000000;#10;
 end
 initial begin
+	$dumpfile("encoder.vcd");
+	$dumpvars(0,encoder8to3_tb);
+end
+initial begin
 	$monitor("time=%0t a=%b b=%b c=%b d=%b e=%b f=%b g=%b h=%b x=%b y=%b z=%b",$time,a,b,c,d,e,f,g,h,x,y,z);
 	#80 $finish;
 end

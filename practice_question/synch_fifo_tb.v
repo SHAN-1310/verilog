@@ -101,7 +101,7 @@ initial begin
 end
 
 initial begin
-	$monitor("time=%0t clk=%b rst=%b we=%b rd=%b data_in=%b(%d) empty=%b full=%b data_out=%b(%d)",
+	$monitor("time=%0t clk=%b rst=%b we=%b rd=%b data_in=%b(%h) empty=%b full=%b data_out=%b(%h)",
 		$time,clk,rst,we,rd,data_in,data_in,empty,full,data_out,data_out);
 end
 endmodule

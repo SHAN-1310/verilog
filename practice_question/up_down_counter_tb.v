@@ -28,6 +28,10 @@ initial begin
 	$finish;
 end
 initial begin
+	$dumpfile("counter.vcd");
+	$dumpvars(0,up_down_counter_tb);
+end
+initial begin
 	$monitor("time=%0t clk=%b rst=%b up=%b count=%b(%0d)",$time,clk,rst,up,count,count);
 end
 endmodule
