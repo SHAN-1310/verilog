@@ -24,6 +24,10 @@ sin=0;#10;
 sin=1;#10;
 end
 initial begin
+	$dumpfile("siso.vcd");
+	$dumpvars(0,siso4bit_tb);
+end
+initial begin
 $monitor("time=%0t|clk=%b|reset=%b|sin=%b|sout=%b",$time,clk,reset,sin,sout);
 #80 $finish;
 end
